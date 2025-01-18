@@ -63,6 +63,11 @@
   font-size: 1.25rem;
 }
 
+.medium45 {
+  font-weight: 500;
+  font-size: 2.8125rem;
+}
+
 .medium18 {
   font-weight: 500;
   font-size: 1.125rem;
@@ -82,6 +87,7 @@
   border-radius: 8px;
   color: #ffffff;
   border: none;
+  transition: transform 1s;
 }
 
 .orange-button1:hover {
@@ -120,6 +126,7 @@ body {
 
 .navbar-links li {
   list-style: none;
+  transition: transform 1s;
 }
 
 .nav-link1:hover,
@@ -133,8 +140,9 @@ body {
 
 .banner-section {
   max-width: 1440px;
-  margin: 6.375rem auto;
+  margin: 0 auto;
   text-align: center;
+  padding-top: 6.375rem;
 }
 
 .banner-section-title {
@@ -154,13 +162,53 @@ body {
   margin-bottom: 3rem;
 }
 
+/* Main section design */
+
+.main {
+  max-width: 1440px;
+  margin: 0px auto;
+  align-items: center;
+}
+
+/* Section 1 design */
+
+.section1 {
+  margin-top: 5.3125rem;
+  display: flex;
+  gap: 4.375rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+}
+
+.section1-imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.section1-title {
+  margin-bottom: 1.5rem;
+}
+
+.section1-title-orange {
+  color: #ff900e;
+}
+
+.section1-button {
+  margin-top: 2rem;
+}
+
 /* media queries for small devices */
 
 @media screen and (max-width: 576px) {
+  /* nav section design */
   .nav {
     flex-direction: column;
     gap: 25px;
   }
+
+  /* banner section design */
 
   .banner-section {
     padding: 0px 10px;
@@ -169,5 +217,18 @@ body {
 
   .banner-section-discription {
     padding: 0px 10px;
+  }
+
+  /* section 1 design */
+
+  .section1 {
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .section1-imgs {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
 }
