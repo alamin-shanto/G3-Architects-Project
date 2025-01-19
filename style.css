@@ -240,6 +240,14 @@
   box-shadow: 0 4px 30px 0px rgba(0, 0, 0, 0.06);
   margin: 20px 0px;
   border-radius: 8px;
+  transition: transform 2s;
+}
+
+.section2-cards1:hover,
+.section2-cards2:hover,
+.section2-cards3:hover,
+.section2-cards4:hover {
+  transform: scale(1.1);
 }
 
 .section2-img {
@@ -381,6 +389,7 @@ img.section2-img {
 
   .section2-content {
     flex-direction: column;
+    gap: 0px;
   }
 
   /* section 3 design */
