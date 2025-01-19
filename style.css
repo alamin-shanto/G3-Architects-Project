@@ -73,6 +73,11 @@
   font-size: 2.8125rem;
 }
 
+.medium25 {
+  font-weight: 500;
+  font-size: 1.5624rem;
+}
+
 .medium18 {
   font-weight: 500;
   font-size: 1.125rem;
@@ -217,7 +222,7 @@
 
 .section2-content {
   display: flex;
-  gap: 3.5rem;
+  gap: 6rem;
   height: 100%;
   width: 100%;
 }
@@ -257,6 +262,16 @@
 img.section2-img {
   height: 100%;
   width: 100%;
+}
+
+.section2-content-button {
+  background-color: #ff900e;
+  color: #ffffff;
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  margin-top: -150px;
+  margin-left: -50px;
 }
 
 /* section 3 design */
@@ -390,6 +405,10 @@ img.section2-img {
   .section2-content {
     flex-direction: column;
     gap: 0px;
+  }
+
+  .section2-content-button {
+    display: none;
   }
 
   /* section 3 design */
